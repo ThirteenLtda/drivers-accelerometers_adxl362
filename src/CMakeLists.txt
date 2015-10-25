@@ -1,7 +1,7 @@
 rock_library(accelerometers_adxl362
-    SOURCES Dummy.cpp
-    HEADERS Dummy.hpp)
+    SOURCES SPI.cpp Driver.cpp
+    HEADERS SPI.hpp Driver.hpp)
 
-rock_executable(accelerometers_adxl362_bin Main.cpp
+rock_executable(adxl362 Main.cpp
     DEPS accelerometers_adxl362)
 
